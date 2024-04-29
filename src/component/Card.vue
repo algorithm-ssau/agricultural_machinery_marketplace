@@ -1,10 +1,12 @@
 <template>
-  <div class="relative m-10 bg-white h-80 w-80 border-slate-100 cursor-pointer">
+  <div
+    class="relative m-10 bg-white h-80 w-80 border-slate-100 cursor-pointer transition hover:bg-orange-50"
+  >
     <div class="flex items-center">
       <img src="/src/public/like1.svg" alt="Like" class="ml-auto mr-4 mt-4" />
     </div>
     <div class="flex justify-center items-center">
-      <img src="/src/public/cart1.svg " alt="Cart1" class="h-48 w-52" />
+      <img src="/src/public/rsm_dx-850.svg " alt="Cart1" class="h-48 w-52" />
     </div>
     <hr class="border-y-orange-500" />
     <p class="ml-2">Обработка почвы 1</p>

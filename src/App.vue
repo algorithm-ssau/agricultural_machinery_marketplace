@@ -9,8 +9,17 @@ import Card from './component/Card.vue'
     <Header />
     <UnderHeader />
     <CatImage />
-    <div class="bg-slate-200">
-      <Card />
+
+    <div class="bg-slate-200 p-10">
+      <h2 class="text-3xl font-bold">Каталог техники</h2>
+
+      <div class="grid grid-cols-4 gap-4">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   </div>
 </template>
