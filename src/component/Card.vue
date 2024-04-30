@@ -1,19 +1,19 @@
 <template>
   <div
-    class="relative m-10 bg-white h-80 w-80 border-slate-100 cursor-pointer transition hover:bg-orange-50"
+    style = "font-weight: 550;" class="relative m-10 bg-white h-80 w-80 border-slate-100 cursor-pointer transition hover:bg-orange-100"
   >
     <div class="flex items-center">
-      <img src="/src/public/like1.svg" alt="Like" class="ml-auto mr-4 mt-4" />
+      <img src="/src/public/like1.svg" alt="Like" class="ml-auto mr-28 mt-4" />
+      <img src="/src/public/like1.svg" alt="Like" class="ml-auto mr-3 mt-4" />
     </div>
     <div class="flex justify-center items-center">
       <img src="/src/public/rsm_dx-850.svg " alt="Cart1" class="h-48 w-52" />
     </div>
     <hr class="border-y-orange-500" />
-    <p class="ml-2">Обработка почвы 1</p>
+    <p class="flex flex-col justify-center ml-6">Обработка почвы 1</p>
     <div class="flex justify-between">
-      <div class="flex flex-col ml-2">
-        <span class="font-sans">Цена:</span>
-        <span class="">3400р</span>
+      <div class="flex flex-col justify-center items-center ml-6">
+        <span style = "font-weight: 750;" class="">3400 ₽</span>
       </div>
       <div
         class="rounded-md h-16 w-16 flex justify-center items-center border-solid border-2 border-orange-500"
