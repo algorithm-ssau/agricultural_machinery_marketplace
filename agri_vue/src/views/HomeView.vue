@@ -28,7 +28,7 @@
         <h3 class ="is-size-4">{{ product.name }}</h3>
         <p class="is-size-6 has-text-grey">${{ product.price }}</p>
 
-        Посмотреть подробнее
+        <router-link v-bind:to="product.get_absolute_url" class="button is-dark mt-4">Посмотреть подробнее</router-link>
       </div>
     </div>
   </div>
@@ -36,8 +36,40 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: "HomeView",
-  components: {},
+  data() {
+    return {
+      latestProducts: []
+    }
+  },
+  components: {
+
+  },
+  mounted() {
+    this.getLatestProducts()
+  },
+  methods: {
+    getLatestProducts() {
+      axios
+        .get('/api/v1/latest-products/')
+        .then(response => {
+          this.latestProducts = response.data
+        })
+        .catch(error => {
+          console.log(error)
+        })
+    }
+  }
 };
 </script>
+
+<style scoped>
+    .image {
+      margin-top: -1.25rem;
+      margin-left: -1.25rem;
+      margin-right: -1.25rem;
+    }
+</style>
