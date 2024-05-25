@@ -29,7 +29,7 @@ class Product(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ('-data_added',)
+        ordering = ('-date_added',)
 
     def __str__(self):
         return self.name
