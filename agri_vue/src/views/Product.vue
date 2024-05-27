@@ -1,62 +1,85 @@
 <template>
-    <div class="page-product">
-        <div class="columns is-multiline">
-            <div class="column is-9">
-                <figure class="image mb-6">
-                    <img v-bind:src="product.get_image">
-                </figure>
+  <div class="page-product">
+    <div class="columns is-multiline">
+      <div class="column is-9">
+        <figure class="image mb-6">
+          <img v-bind:src="product.get_image" />
+        </figure>
 
-                <h1 class="title">{{ product.name }}</h1>
+        <h1 class="title">{{ product.name }}</h1>
 
-                <p>{{ product.description }}</p>
-            </div>
+        <p>{{ product.description }}</p>
+      </div>
 
-            <div class="column is-3">
-                <h2 class="subtitle">Информация</h2>
+      <div class="column is-3">
+        <h2 class="subtitle">Информация</h2>
 
-                <p><strong>Стоимость: </strong>${{ product.price }}</p>
+        <p><strong>Стоимость: </strong>${{ product.price }}</p>
 
-                <div class="field has-addons mt-6">
-                    <div class="control">
-                        <input type="number" class="input" min="1" v-model="quantity">
-                    </div>
+        <div class="field has-addons mt-6">
+          <div class="control">
+            <input type="number" class="input" min="1" v-model="quantity" />
+          </div>
 
-                    <div class="control">
-                        <a class="button is-dark">Добавить в корзину</a>
-                    </div>
-                </div>
-            </div>
+          <div class="control">
+            <a class="button is-dark" @click="addToCart">Добавить в корзину</a>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
-import axios from 'axios'
-export default {
-    name: 'Product',
-    data() {
-        return {
-            product: {},
-            quantity : 1
-        }
-    },
-    mounted() {
-        this.getProduct()
-    },
-    methods: {
-        getProduct() {
-            const category_slug = this.$route.params.category_slug
-            const product_slug = this.$route.params.product_slug
+import axios from "axios";
+import { toast } from "bulma-toast";
 
-            axios
-                .get(`/api/v1/products/${category_slug}/${product_slug}`)
-                .then(response => {
-                    this.product = response.data
-                })
-                .catch(error => {
-                    console.log(error)
-                })
-        }
-    }
-}
+export default {
+  name: "Product",
+  data() {
+    return {
+      product: {},
+      quantity: 1,
+    };
+  },
+  mounted() {
+    this.getProduct();
+  },
+  methods: {
+    getProduct() {
+      const category_slug = this.$route.params.category_slug;
+      const product_slug = this.$route.params.product_slug;
+
+      axios
+        .get(`/api/v1/products/${category_slug}/${product_slug}`)
+        .then((response) => {
+          this.product = response.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+    addToCart() {
+      console.log("addToCart");
+      if (isNaN(this.quantity) || this.quantity < 1) {
+        this.quantity = 1;
+      }
+
+      const item = {
+        product: this.product,
+        quantity: this.quantity,
+      };
+
+      this.$store.commit("addToCart", item);
+      toast({
+        message: "Товар добавлен в корзину",
+        type: "is-success",
+        dismissible: true,
+        pauseOnHover: true,
+        duration: 2000,
+        position: "bottom-right",
+      });
+    },
+  },
+};
 </script>
