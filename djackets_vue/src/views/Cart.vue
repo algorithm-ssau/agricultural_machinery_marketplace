@@ -34,7 +34,7 @@
         <h2 class="subtitle">Описание</h2>
 
         <strong>₽{{ cartTotalPrice.toFixed(2) }}</strong
-        >, {{ cartTotalLength }} items
+        >, {{ cartTotalLength }} Количество
 
         <hr />
 

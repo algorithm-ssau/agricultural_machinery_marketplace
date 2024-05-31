@@ -11,7 +11,7 @@
       <router-link
         v-bind:to="product.get_absolute_url"
         class="button is-dark mt-4"
-        >Ознакомиться...</router-link
+        >Перейти</router-link
       >
     </div>
   </div>

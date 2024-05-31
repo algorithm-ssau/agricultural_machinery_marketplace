@@ -28,7 +28,7 @@
 
           <tfoot>
             <tr>
-              <td colspan="2">Total</td>
+              <td colspan="2">Итого</td>
               <td>{{ cartTotalLength }}</td>
               <td>₽{{ cartTotalPrice.toFixed(2) }}</td>
             </tr>
@@ -37,21 +37,21 @@
       </div>
 
       <div class="column is-12 box">
-        <h2 class="subtitle">Shipping details</h2>
+        <h2 class="subtitle">Реквизиты</h2>
 
-        <p class="has-text-grey mb-4">* All fields are required</p>
+        <p class="has-text-grey mb-4">* Все поля обязательны для заполнения</p>
 
         <div class="columns is-multiline">
           <div class="column is-6">
             <div class="field">
-              <label>First name*</label>
+              <label>Имя*</label>
               <div class="control">
                 <input type="text" class="input" v-model="first_name" />
               </div>
             </div>
 
             <div class="field">
-              <label>Last name*</label>
+              <label>Фамилия*</label>
               <div class="control">
                 <input type="text" class="input" v-model="last_name" />
               </div>
@@ -65,7 +65,7 @@
             </div>
 
             <div class="field">
-              <label>Phone*</label>
+              <label>Номер телефона*</label>
               <div class="control">
                 <input type="text" class="input" v-model="phone" />
               </div>
@@ -74,21 +74,21 @@
 
           <div class="column is-6">
             <div class="field">
-              <label>Address*</label>
+              <label>Адрес*</label>
               <div class="control">
                 <input type="text" class="input" v-model="address" />
               </div>
             </div>
 
             <div class="field">
-              <label>Zip code*</label>
+              <label>Почтовый индекс*</label>
               <div class="control">
                 <input type="text" class="input" v-model="zipcode" />
               </div>
             </div>
 
             <div class="field">
-              <label>Place*</label>
+              <label>Город*</label>
               <div class="control">
                 <input type="text" class="input" v-model="place" />
               </div>
@@ -108,7 +108,7 @@
           <hr />
 
           <button class="button is-dark" @click="submitForm">
-            Pay with Stripe
+            Оплатить с помощью карты
           </button>
         </template>
       </div>
