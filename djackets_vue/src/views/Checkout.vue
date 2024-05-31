@@ -2,17 +2,18 @@
   <div class="page-checkout">
     <div class="columns is-multiline">
       <div class="column is-12">
-        <h1 class="title">Checkout</h1>
+        <h1 class="title">Проверить</h1>
       </div>
 
       <div class="column is-12 box">
         <table class="table is-fullwidth">
           <thead>
             <tr>
-              <th>Product</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Total</th>
+              <th>Продукт</th>
+              <th>Цена</th>
+              <th>Количество</th>
+              <th>Всего</th>
+              <th></th>
             </tr>
           </thead>
 

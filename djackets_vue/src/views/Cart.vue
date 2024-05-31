@@ -2,17 +2,17 @@
   <div class="page-cart">
     <div class="columns is-multiline">
       <div class="column is-12">
-        <h1 class="title">Cart</h1>
+        <h1 class="title">Корзина</h1>
       </div>
 
       <div class="column is-12 box">
         <table class="table is-fullwidth" v-if="cartTotalLength">
           <thead>
             <tr>
-              <th>Product</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Total</th>
+              <th>Продукт</th>
+              <th>Цена</th>
+              <th>Количество</th>
+              <th>Всего</th>
               <th></th>
             </tr>
           </thead>
@@ -27,11 +27,11 @@
           </tbody>
         </table>
 
-        <p v-else>You don't have any products in your cart...</p>
+        <p v-else>В вашей корзине еще нет товаров</p>
       </div>
 
       <div class="column is-12 box">
-        <h2 class="subtitle">Summary</h2>
+        <h2 class="subtitle">Описание</h2>
 
         <strong>₽{{ cartTotalPrice.toFixed(2) }}</strong
         >, {{ cartTotalLength }} items
@@ -39,7 +39,7 @@
         <hr />
 
         <router-link to="/cart/checkout" class="button is-dark"
-          >Proceed to checkout</router-link
+          >Перейти к оформлению заказа</router-link
         >
       </div>
     </div>
