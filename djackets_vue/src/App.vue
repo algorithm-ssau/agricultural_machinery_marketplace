@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="control">
-                  <button class="button is-success">
+                  <button class="button is-orange">
                     <span class="icon">
                       <i class="fas fa-search"></i>
                     </span>
@@ -71,7 +71,7 @@
                 >
               </template>
 
-              <router-link to="/cart" class="button is-success">
+              <router-link to="/cart" class="button is-orange">
                 <span class="icon"><i class="fas fa-shopping-cart"></i></span>
                 <span>Корзина ({{ cartTotalLength }})</span>
               </router-link>
@@ -179,5 +179,24 @@ export default {
   &.is-loading {
     height: 80px;
   }
+}
+
+.button.is-orange {
+  background-color: #ff851b;
+  border-color: #ff851b;
+  color: white;
+}
+
+.button.is-orange:hover {
+  background-color: #ff7700;
+  border-color: #ff7700;
+}
+
+.navbar-item .button.is-orange {
+  margin-left: 0.5rem;
+}
+
+.field.has-addons .button.is-orange {
+  margin-left: -1px;
 }
 </style>
