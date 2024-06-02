@@ -47,33 +47,33 @@ python manage.py runserver
 <table>
 <tr>
  <td align="center">
-<a href="https://github.com/mark-nikerin">
+<a href="https://github.com/CleverHedgehog20">
 <img src="https://avatars.githubusercontent.com/u/158333285?s=64&v=4" width="80" height="80" alt=""/><br />
 <sub><b>Евгений Ларионов</b></sub>
 </a><br />
 <span>Team Lead</span>
 </td>
 <td align="center">
-<a href="https://github.com/eleonora-radina">
+<a href="https://github.com/ssablinaa">
 <img src="https://avatars.githubusercontent.com/u/158333285?s=64&v=4" width="80" height="80" alt=""/><br />
 <sub><b>Юлия Саблина</b></sub>
 </a><br />
 <span>Frontend</span>
 </td>
 <td align="center">
-<a href="https://github.com/Gevorkyan-Narek">
+<a href="https://github.com/PeterLonghand">
 <img src="https://avatars.githubusercontent.com/u/160715917?v=4" width="80" height="80" alt=""/><br />
 <sub><b>Пётр Долгоруков</b></sub>
 </a><br />
 <span>Fullstack</span>
 <td align="center">
-<a href="https://github.com/valkoshkin">
+<a href="https://github.com/AleksCombo">
 <img src="https://avatars.githubusercontent.com/u/137397245?s=64&v=4" width="80" height="80" alt=""/><br />
 <sub><b>Александо Шкроб</b></sub>
 </a><br />
 <span>Backend</span>
 <td align="center">
-<a href="https://github.com/byFluerash">
+<a href="https://github.com/AnastasiaMandel">
 <img src="https://avatars.githubusercontent.com/u/145050983?v=4" width="80" height="80" alt=""/><br />
 <sub><b>Анастасия Мандель</b></sub>
 </a><br />
