@@ -39,10 +39,46 @@ npm install -g @vue/cli
 ```
 python manage.py runserver
 ```
-3) Перейдите по адресу: http://127.0.0.1:5000/
-### Участники команды:
-1. Ларионов Евгений(6303)
-2. Долгоруков Пётр(6303)
-3. Саблина Юлия(6302)
-4. Мандель Анастасия(6303)
-5. Шкроб Александр(6303)
+```
+Перейдите по адресу: http://127.0.0.1:5000/
+```
+
+## ⌨️ Участники проекта 🖱
+<table>
+<tr>
+ <td align="center">
+<a href="https://github.com/mark-nikerin">
+<img src="https://avatars.githubusercontent.com/u/158333285?s=64&v=4" width="80" height="80" alt=""/><br />
+<sub><b>Евгений Ларионов</b></sub>
+</a><br />
+<span>Team Lead</span>
+</td>
+<td align="center">
+<a href="https://github.com/eleonora-radina">
+<img src="https://avatars.githubusercontent.com/u/158333285?s=64&v=4" width="80" height="80" alt=""/><br />
+<sub><b>Юлия Саблина</b></sub>
+</a><br />
+<span>Frontend</span>
+</td>
+<td align="center">
+<a href="https://github.com/Gevorkyan-Narek">
+<img src="https://avatars.githubusercontent.com/u/160715917?v=4" width="80" height="80" alt=""/><br />
+<sub><b>Пётр Долгоруков</b></sub>
+</a><br />
+<span>Fullstack</span>
+<td align="center">
+<a href="https://github.com/valkoshkin">
+<img src="https://avatars.githubusercontent.com/u/137397245?s=64&v=4" width="80" height="80" alt=""/><br />
+<sub><b>Александо Шкроб</b></sub>
+</a><br />
+<span>Backend</span>
+<td align="center">
+<a href="https://github.com/byFluerash">
+<img src="https://avatars.githubusercontent.com/u/145050983?v=4" width="80" height="80" alt=""/><br />
+<sub><b>Анастасия Мандель</b></sub>
+</a><br />
+<span>Backend</span>
+</td>
+</td>
+</tr>
+</table>
