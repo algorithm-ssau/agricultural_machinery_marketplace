@@ -69,7 +69,7 @@ python manage.py runserver
 <td align="center">
 <a href="https://github.com/AleksCombo">
 <img src="https://avatars.githubusercontent.com/u/137397245?s=64&v=4" width="80" height="80" alt=""/><br />
-<sub><b>Александо Шкроб</b></sub>
+<sub><b>Александр Шкроб</b></sub>
 </a><br />
 <span>Backend</span>
 <td align="center">
