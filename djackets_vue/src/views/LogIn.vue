@@ -51,7 +51,7 @@ export default {
     };
   },
   mounted() {
-    document.title = "Log In | Djackets";
+    document.title = "Вход | CornHub";
   },
   methods: {
     async submitForm() {

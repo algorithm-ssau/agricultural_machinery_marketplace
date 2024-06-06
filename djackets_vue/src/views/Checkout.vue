@@ -139,7 +139,7 @@ export default {
     };
   },
   mounted() {
-    document.title = "Checkout | Djackets";
+    document.title = "Оформление | CornHub";
 
     this.cart = this.$store.state.cart;
 

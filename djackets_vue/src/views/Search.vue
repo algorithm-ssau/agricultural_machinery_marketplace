@@ -32,7 +32,7 @@ export default {
     };
   },
   mounted() {
-    document.title = "Search | Djackets";
+    document.title = "Поиск | CornHub";
 
     let uri = window.location.search.substring(1);
     let params = new URLSearchParams(uri);

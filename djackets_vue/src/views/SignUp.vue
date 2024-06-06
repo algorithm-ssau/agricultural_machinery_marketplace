@@ -64,15 +64,15 @@ export default {
       this.errors = [];
 
       if (this.username === "") {
-        this.errors.push("The username is missing");
+        this.errors.push("Имя пользователя отсутствует");
       }
 
       if (this.password === "") {
-        this.errors.push("The password is too short");
+        this.errors.push("Пароль слишком короткий");
       }
 
       if (this.password !== this.password2) {
-        this.errors.push("The passwords doesn't match");
+        this.errors.push("Пароли не совпадают");
       }
 
       if (!this.errors.length) {
@@ -85,7 +85,7 @@ export default {
           .post("/api/v1/users/", formData)
           .then((response) => {
             toast({
-              message: "Account created, please log in!",
+              message: "Учетная запись создана, пожалуйста, войдите в систему!",
               type: "is-success",
               dismissible: true,
               pauseOnHover: true,
@@ -105,7 +105,9 @@ export default {
 
               console.log(JSON.stringify(error.response.data));
             } else if (error.message) {
-              this.errors.push("Something went wrong. Please try again");
+              this.errors.push(
+                "Что-то пошло не так. Пожалуйста, попробуйте снова"
+              );
 
               console.log(JSON.stringify(error));
             }

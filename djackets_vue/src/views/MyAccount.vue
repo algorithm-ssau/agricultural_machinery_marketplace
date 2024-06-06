@@ -40,7 +40,7 @@ export default {
     };
   },
   mounted() {
-    document.title = "My account | Djackets";
+    document.title = "Мой аккаунт | CornHub";
 
     this.getMyOrders();
   },
