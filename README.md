@@ -52,7 +52,7 @@ python manage.py runserver
 ```
 cd djackets_vue
 ```
-5) После этого необходимо запустить Vue с помощью команды
+4) После этого необходимо запустить Vue с помощью команды
 ```
 npm run serve
 ```
