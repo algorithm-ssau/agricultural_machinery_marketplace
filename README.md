@@ -17,7 +17,7 @@ http://84.201.163.253:8080/
 ### ✅ Установка
 1)  Установите Python с официального сайта: https://www.python.org/downloads/
 2)  Скачайте репозиторий
-3)  Перейдите в консоль, вызвав сочетание **ctrl + shift + p**
+3)  Откройте консоль в текущей папке
 4)  Установите Django, прописав:
 ```
 pip install django
@@ -34,7 +34,7 @@ pip install pillow
 
 pip install stripe
 ```
-6) Установите vue, выполнив команды:
+6) Откройте папку **djackets_vue** и установите vue, выполнив команды:
 ```
 npm install -g @vue/cli
 npm install
@@ -52,7 +52,7 @@ python manage.py runserver
 ```
 cd djackets_vue
 ```
-5) После этого необходимо запустить Vue с помощью команды
+4) После этого необходимо запустить Vue с помощью команды
 ```
 npm run serve
 ```
